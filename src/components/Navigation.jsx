@@ -1,6 +1,6 @@
 
 
-export default function Navigation() {
+ const Navigation = () => {
   return (
     <nav id="nav-buttons">
       <div id="nav-logo">
@@ -18,3 +18,5 @@ export default function Navigation() {
     </nav>
   )
 }
+
+export default Navigation;
