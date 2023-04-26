@@ -26,33 +26,13 @@ code {
 
 /* --------------- Navigation Bar Styling ------------ */
 
+#nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
 #nav-logo img {
-  width: 50px;
   height: 50px;
-  float: left;
-  margin-left: 5rem;
-  margin-top: 2rem;
+  width: 50px;
 }
-
-#nav-services {
-  float: right;
-  margin-top: 2rem;
-  padding-top: 1rem;
-}
-
-#nav-about {
-  float: right;
-  margin-top: 2rem;
-  padding-right: 4rem;
-  padding-left: 4rem;
-  padding-top: 1rem;
-}
-
-#nav-contact {
-  float: right;
-  margin-top: 2rem;
-  padding-right: 5rem;
-  padding-top: 1rem;
-}
-
-
