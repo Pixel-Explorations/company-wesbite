@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Navigation from './components/Navigation';
 import Mountain from './components/Mountain';
+import Services from './components/Services.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,5 +12,6 @@ root.render(
     <App />
     <Navigation />
     <Mountain />
+    <Services />
   </React.StrictMode>
 );
