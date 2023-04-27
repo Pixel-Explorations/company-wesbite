@@ -4,24 +4,15 @@ import './index.css';
 import App from './App';
 import Navigation from './components/Navigation';
 import Services from './components/Services.jsx';
-import MountainFour from './components/Mountains/MountainFour';
-import MountainOne from './components/Mountains/MountainOne';
-import MountainThree from './components/Mountains/MountainThree';
-import MountainTwo from './components/Mountains/MountainTwo';
-import MountainZero from './components/Mountains/MountainZero';
-import MountainFive from './components/Mountains/MountainFive';
+import AllMountains from './components/Mountains/AllMountains';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
     <Navigation />
-    <MountainZero />
-    <MountainTwo />
-    <MountainOne />
-    <MountainFive />
-    <MountainThree />
-    <MountainFour />
+    <AllMountains />
     <Services />
   </React.StrictMode>
 );
