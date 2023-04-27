@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-function Mountain() {
+function MountainFour() {
   const scrollRef = useRef(0);
   const mountainRef = useRef(null);
 
@@ -9,7 +9,7 @@ function Mountain() {
     const handleScroll = () => {
       scrollRef.current = window.scrollY;
       if (mountainRef.current) {
-        mountainRef.current.style.transform = `translateX(${-scrollRef.current}px)`;
+        mountainRef.current.style.transform = `translateX(${+scrollRef.current}px)`;
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -20,18 +20,18 @@ function Mountain() {
     <div>
       <motion.div
         ref={mountainRef}
-        className="w-0 h-0 border-l-[275px] 
-        border-l-transparent border-b-[500px] 
-        border-b-indigo-800 border-r-[275px] 
-        border-r-transparent fixed bottom-0 left-0"
+        className="w-0 h-0 border-l-[450px] 
+        border-l-transparent border-b-[1100px] 
+        border-b-blue-800 border-r-[450px] 
+        bg-transparent 
+        border-r-transparent fixed bottom-0 right-0"
         style={{
           position: "fixed",
           bottom: 0,
-          left: 0,
+          right: 100,
         }}
       />
-      <div style={{ height: "200vh" }} />
     </div>
   );
 }
-export default Mountain;
+export default MountainFour;
